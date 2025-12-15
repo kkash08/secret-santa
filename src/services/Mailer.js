@@ -32,5 +32,3 @@ class Mailer {
 }
 
 export { Mailer };
-
-
