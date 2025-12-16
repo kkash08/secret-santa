@@ -10,6 +10,8 @@ router.post("/", (req, res) => {
         //validate curList with util -> validate participants.
         let newObj = new SecretSanta(curList);
         const assignedMap = newObj.assignSecretSanta();
+        //assignedMap.key -> Secret Santa, .value -> jisko gift milega
+        // complete tomo.
          res.status(200).json({ msg: "Emails sent!" });
 
     } catch (error) {
